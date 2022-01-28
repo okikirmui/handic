@@ -1,0 +1,10 @@
+cost-factor = 800
+bos-feature = BOS/EOS,*,*,*,*,*,*,*,*,*,*
+eval-size = 5
+unk-eval-size = 3
+config-charset = utf8
+
+; ChaSen for KH Coder
+node-format-chasen = %f[6]\t%M\t%f[5]\t%F-[0,1,2]\t%f[3]\t%f[4]\n
+unk-format-chasen = %f[6]\t%M\t%f[6]\t%F-[0,1,2]\t\t\n
+eos-format-chasen = EOS\n
