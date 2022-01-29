@@ -1,0 +1,17 @@
+Noun,*	0
+Verb,*	1
+Sonzaisi,*	2
+Adjective,*	3
+Adverb,*	4
+Conjunction,*	5
+Interjection,*	6
+Modifier,*	7
+Root,*	8
+Siteisi,*	9
+Ending,語尾	10
+Ending,助詞	11
+Prefinal,*	12
+Prefix,*	13
+Suffix,*	14
+(Symbol|記号)	15
+*,*	16
