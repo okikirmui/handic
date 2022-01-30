@@ -256,14 +256,14 @@ adding virtual node: Noun,普通,*,*,*,*,*,*,*,*,SL
 adding virtual node: Noun,普通,*,*,*,*,*,*,*,*,SL
 adding virtual node: Noun,普通,*,*,*,*,*,*,*,*,SL
 adding virtual node: Noun,固有名詞,外国姓,*,*,차오,차오,*,*,*,NNP
-adding virtual node: Root,語根,状態,*,*,간소04,간소,簡素,*,*,XR
-4300... 4400... adding virtual node: Noun,固有名詞,外国名,*,*,스테판,스테판,*,*,*,NNP
+4300... adding virtual node: Root,語根,状態,*,*,간소04,간소,簡素,*,*,XR
+4400... adding virtual node: Noun,固有名詞,外国名,*,*,스테판,스테판,*,*,*,NNP
 adding virtual node: Noun,固有名詞,外国姓,*,*,사엘,사엘,*,*,*,NNP
 adding virtual node: Noun,固有名詞,人名,*,*,정인이,정인이,*,*,*,NNP
 adding virtual node: Noun,普通,*,*,*,삐뽀삐뽀,삐뽀삐뽀,*,*,*,NNG
 adding virtual node: Noun,普通,*,*,*,삐뽀삐뽀,삐뽀삐뽀,*,*,*,NNG
 adding virtual node: Noun,固有名詞,人名,*,*,정인이,정인이,*,*,*,NNP
-adding virtual node: Noun,固有名詞,*,*,*,업비트,업비트,*,"사이트 이름",*,NNP
+4500... adding virtual node: Noun,固有名詞,*,*,*,업비트,업비트,*,"사이트 이름",*,NNP
 adding virtual node: Noun,固有名詞,組織,*,*,두나무,두나무,*,"회사 이름",*,NNP
 adding virtual node: Noun,固有名詞,*,*,*,업비트,업비트,*,"사이트 이름",*,NNP
 adding virtual node: Noun,固有名詞,*,*,*,업비트,업비트,*,"사이트 이름",*,NNP
@@ -278,26 +278,26 @@ adding virtual node: Noun,固有名詞,*,*,*,업비트,업비트,*,"사이트 �
 adding virtual node: Noun,固有名詞,*,*,*,업비트,업비트,*,"사이트 이름",*,NNP
 adding virtual node: Noun,固有名詞,*,*,*,업비트,업비트,*,"사이트 이름",*,NNP
 adding virtual node: Noun,普通,*,*,*,탑승구,탑승구,搭乘口,*,*,NNG
-4500... adding virtual node: Noun,固有名詞,組織,*,*,덕원여고,덕원여고,덕원女高,*,*,NNP
+adding virtual node: Noun,固有名詞,組織,*,*,덕원여고,덕원여고,덕원女高,*,*,NNP
 adding virtual node: Noun,固有名詞,組織,*,*,덕원여고,덕원여고,덕원女高,*,*,NNP
 adding virtual node: Noun,固有名詞,組織,*,*,덕원여고,덕원여고,덕원女高,*,*,NNP
-adding virtual node: Verb,自立,*,語基3,*,빠져들다,빠져들어,*,*,*,VV
+4600... adding virtual node: Verb,自立,*,語基3,*,빠져들다,빠져들어,*,*,*,VV
 adding virtual node: Noun,普通,*,*,*,상한제,상한제,上限制,*,*,NNG
-4600... adding virtual node: Noun,固有名詞,*,*,*,백석,백석,*,*,*,NNP
+adding virtual node: Noun,固有名詞,*,*,*,백석,백석,*,*,*,NNP
 4700... adding virtual node: Noun,固有名詞,都市,*,*,아마조나스주,아마조나스주,아마조나스州,Amazonas州,*,NNP
 adding virtual node: Noun,固有名詞,組織,*,*,오롤리데이,오롤리데이,*,*,*,NNP
 adding virtual node: Noun,固有名詞,組織,*,*,오롤리데이,오롤리데이,*,*,*,NNP
 adding virtual node: Noun,普通,*,*,*,지심,지심,*,*,*,NNG
-adding virtual node: Noun,固有名詞,組織,*,*,케이스택컨설팅,케이스택컨설팅,*,*,*,NNP
+4800... adding virtual node: Noun,固有名詞,組織,*,*,케이스택컨설팅,케이스택컨설팅,*,*,*,NNP
 adding virtual node: Noun,固有名詞,都市,*,*,음성,음성,陰城,*,*,NNP
-4800... adding virtual node: Noun,固有名詞,都市,*,*,아마조나스주,아마조나스주,아마조나스州,Amazonas州,*,NNP
+4900... adding virtual node: Noun,固有名詞,都市,*,*,아마조나스주,아마조나스주,아마조나스州,Amazonas州,*,NNP
 adding virtual node: Noun,固有名詞,外国名,*,*,타카지,타카지,*,*,*,NNP
 adding virtual node: Noun,固有名詞,外国姓,*,*,와키타,와키타,*,*,*,NNP
-4900... adding virtual node: Noun,固有名詞,*,*,*,다스뵈이다,다스뵈이다,*,"프로그램 제목",*,NNP
+adding virtual node: Noun,固有名詞,*,*,*,다스뵈이다,다스뵈이다,*,"프로그램 제목",*,NNP
 adding virtual node: Ending,語尾,接続形,*,命令3接続,라,라,*,*,*,EC
-5000... 5000... 
-Number of sentences: 5000
-Number of features:  122711
+5000... 
+Number of sentences: 5025
+Number of features:  122903
 eta:                 0.00005
 freq:                1
 eval-size:           5
@@ -306,167 +306,162 @@ threads:             2
 charset:             utf8
 C(sigma^2):          1.00000
 
-iter=0 err=0.99700 F=0.27299 target=563294.67246 diff=1.00000
-iter=1 err=0.98320 F=0.41684 target=370376.24381 diff=0.34248
-iter=2 err=0.98180 F=0.48507 target=189591.63523 diff=0.48811
-iter=3 err=0.97520 F=0.53359 target=152851.45661 diff=0.19379
-iter=4 err=0.95940 F=0.59535 target=118215.99760 diff=0.22660
-iter=5 err=0.94120 F=0.67106 target=96984.91745 diff=0.17960
-iter=6 err=0.90140 F=0.72471 target=80933.16221 diff=0.16551
-iter=7 err=0.88240 F=0.75270 target=72391.50645 diff=0.10554
-iter=8 err=0.85060 F=0.79121 target=62187.89684 diff=0.14095
-iter=9 err=0.83740 F=0.80207 target=59961.36575 diff=0.03580
-iter=10 err=0.80600 F=0.84108 target=50860.73626 diff=0.15177
-iter=11 err=0.79860 F=0.84410 target=49078.83690 diff=0.03503
-iter=12 err=0.78260 F=0.86422 target=45750.94353 diff=0.06781
-iter=13 err=0.77220 F=0.86557 target=43197.15800 diff=0.05582
-iter=14 err=0.76340 F=0.87766 target=41139.74382 diff=0.04763
-iter=15 err=0.75340 F=0.88493 target=39210.22013 diff=0.04690
-iter=16 err=0.75280 F=0.88640 target=38158.58849 diff=0.02682
-iter=17 err=0.74360 F=0.89178 target=36972.40158 diff=0.03109
-iter=18 err=0.73200 F=0.89593 target=35887.00399 diff=0.02936
-iter=19 err=0.72120 F=0.90091 target=34971.18707 diff=0.02552
-iter=20 err=0.71100 F=0.90361 target=34236.86862 diff=0.02100
-iter=21 err=0.70780 F=0.90504 target=33869.16826 diff=0.01074
-iter=22 err=0.69960 F=0.90821 target=33195.83864 diff=0.01988
-iter=23 err=0.70040 F=0.90758 target=33071.73131 diff=0.00374
-iter=24 err=0.69100 F=0.91111 target=32304.37068 diff=0.02320
-iter=25 err=0.68780 F=0.91251 target=31986.61676 diff=0.00984
-iter=26 err=0.68200 F=0.91309 target=31532.75525 diff=0.01419
-iter=27 err=0.67840 F=0.91487 target=31026.30803 diff=0.01606
-iter=28 err=0.67420 F=0.91510 target=30638.04437 diff=0.01251
-iter=29 err=0.67020 F=0.91661 target=30073.10057 diff=0.01844
-iter=30 err=0.66600 F=0.91705 target=29845.19704 diff=0.00758
-iter=31 err=0.66480 F=0.91780 target=29509.99560 diff=0.01123
-iter=32 err=0.67920 F=0.91747 target=29449.44894 diff=0.00205
-iter=33 err=0.66400 F=0.91971 target=29031.12545 diff=0.01420
-iter=34 err=0.65320 F=0.92162 target=28812.66426 diff=0.00753
-iter=35 err=0.64540 F=0.92381 target=28577.89047 diff=0.00815
-iter=36 err=0.64380 F=0.92567 target=28302.45448 diff=0.00964
-iter=37 err=0.64800 F=0.92557 target=28136.79277 diff=0.00585
-iter=38 err=0.63980 F=0.92705 target=27836.39612 diff=0.01068
-iter=39 err=0.63680 F=0.92699 target=27655.38155 diff=0.00650
-iter=40 err=0.63460 F=0.92760 target=27461.12140 diff=0.00702
-iter=41 err=0.63300 F=0.92715 target=27362.74329 diff=0.00358
-iter=42 err=0.63100 F=0.92858 target=27181.54757 diff=0.00662
-iter=43 err=0.62860 F=0.93015 target=27075.52841 diff=0.00390
-iter=44 err=0.62240 F=0.93188 target=26949.75529 diff=0.00465
-iter=45 err=0.62020 F=0.93330 target=26720.16490 diff=0.00852
-iter=46 err=0.62140 F=0.93489 target=26766.74562 diff=0.00174
-iter=47 err=0.61760 F=0.93514 target=26617.22543 diff=0.00559
-iter=48 err=0.61760 F=0.93501 target=26484.27711 diff=0.00499
-iter=49 err=0.61600 F=0.93537 target=26385.41856 diff=0.00373
-iter=50 err=0.61400 F=0.93491 target=26278.27233 diff=0.00406
-iter=51 err=0.61220 F=0.93671 target=26173.12812 diff=0.00400
-iter=52 err=0.61020 F=0.93735 target=26083.13347 diff=0.00344
-iter=53 err=0.60640 F=0.93817 target=25979.21145 diff=0.00398
-iter=54 err=0.60480 F=0.93804 target=25877.98336 diff=0.00390
-iter=55 err=0.60320 F=0.93833 target=25810.86258 diff=0.00259
-iter=56 err=0.60480 F=0.93863 target=25696.86969 diff=0.00442
-iter=57 err=0.60100 F=0.94055 target=25658.56005 diff=0.00149
-iter=58 err=0.60240 F=0.94033 target=25559.12233 diff=0.00388
-iter=59 err=0.60240 F=0.94056 target=25518.53951 diff=0.00159
-iter=60 err=0.60080 F=0.94079 target=25467.16908 diff=0.00201
-iter=61 err=0.60140 F=0.94160 target=25413.96230 diff=0.00209
-iter=62 err=0.59340 F=0.94213 target=25335.88693 diff=0.00307
-iter=63 err=0.59180 F=0.94249 target=25277.42318 diff=0.00231
-iter=64 err=0.58940 F=0.94280 target=25229.83176 diff=0.00188
-iter=65 err=0.59260 F=0.94289 target=25242.16792 diff=0.00049
-iter=66 err=0.58880 F=0.94310 target=25201.06951 diff=0.00163
-iter=67 err=0.58740 F=0.94340 target=25160.58644 diff=0.00161
-iter=68 err=0.58740 F=0.94353 target=25092.68489 diff=0.00270
-iter=69 err=0.58660 F=0.94372 target=25040.38267 diff=0.00208
-iter=70 err=0.58420 F=0.94472 target=24986.59074 diff=0.00215
-iter=71 err=0.58280 F=0.94464 target=24939.75298 diff=0.00187
-iter=72 err=0.58020 F=0.94471 target=24895.15388 diff=0.00179
-iter=73 err=0.57860 F=0.94357 target=24865.05033 diff=0.00121
-iter=74 err=0.57840 F=0.94366 target=24844.60311 diff=0.00082
-iter=75 err=0.57580 F=0.94491 target=24779.81201 diff=0.00261
-iter=76 err=0.57420 F=0.94484 target=24784.62366 diff=0.00019
-iter=77 err=0.57560 F=0.94522 target=24752.60650 diff=0.00129
-iter=78 err=0.57540 F=0.94570 target=24738.69699 diff=0.00056
-iter=79 err=0.57340 F=0.94603 target=24706.28010 diff=0.00131
-iter=80 err=0.57300 F=0.94552 target=24733.64587 diff=0.00111
-iter=81 err=0.57240 F=0.94505 target=24691.21235 diff=0.00172
-iter=82 err=0.57060 F=0.94522 target=24672.36377 diff=0.00076
-iter=83 err=0.56840 F=0.94564 target=24641.23616 diff=0.00126
-iter=84 err=0.56820 F=0.94623 target=24619.70627 diff=0.00087
-iter=85 err=0.56800 F=0.94628 target=24591.68009 diff=0.00114
-iter=86 err=0.56620 F=0.94715 target=24567.57809 diff=0.00098
-iter=87 err=0.56360 F=0.94697 target=24541.20688 diff=0.00107
-iter=88 err=0.56420 F=0.94664 target=24518.58517 diff=0.00092
-iter=89 err=0.56480 F=0.94701 target=24488.90023 diff=0.00121
-iter=90 err=0.56480 F=0.94881 target=24487.82507 diff=0.00004
-iter=91 err=0.56460 F=0.94754 target=24471.90672 diff=0.00065
-iter=92 err=0.56560 F=0.94834 target=24452.88446 diff=0.00078
-iter=93 err=0.56500 F=0.94864 target=24436.91836 diff=0.00065
-iter=94 err=0.56400 F=0.94935 target=24409.99580 diff=0.00110
-iter=95 err=0.55940 F=0.94970 target=24397.70891 diff=0.00050
-iter=96 err=0.56060 F=0.94947 target=24380.41185 diff=0.00071
-iter=97 err=0.55980 F=0.94941 target=24369.81594 diff=0.00043
-iter=98 err=0.55980 F=0.94940 target=24356.84866 diff=0.00053
-iter=99 err=0.56180 F=0.94951 target=24344.73192 diff=0.00050
-iter=100 err=0.56100 F=0.94958 target=24325.16389 diff=0.00080
-iter=101 err=0.56040 F=0.94965 target=24316.12162 diff=0.00037
-iter=102 err=0.56020 F=0.94918 target=24307.95021 diff=0.00034
-iter=103 err=0.56060 F=0.95022 target=24297.03443 diff=0.00045
-iter=104 err=0.55860 F=0.95022 target=24280.71461 diff=0.00067
-iter=105 err=0.56060 F=0.95058 target=24267.50027 diff=0.00054
-iter=106 err=0.56060 F=0.95076 target=24257.95168 diff=0.00039
-iter=107 err=0.56040 F=0.95078 target=24241.80706 diff=0.00067
-iter=108 err=0.56100 F=0.95058 target=24227.51955 diff=0.00059
-iter=109 err=0.56280 F=0.95056 target=24219.64161 diff=0.00033
-iter=110 err=0.56140 F=0.95071 target=24207.85079 diff=0.00049
-iter=111 err=0.55860 F=0.95112 target=24195.87206 diff=0.00049
-iter=112 err=0.55500 F=0.95002 target=24182.20814 diff=0.00056
-iter=113 err=0.55380 F=0.94964 target=24173.39419 diff=0.00036
-iter=114 err=0.55580 F=0.94969 target=24166.86990 diff=0.00027
-iter=115 err=0.55560 F=0.94972 target=24159.60730 diff=0.00030
-iter=116 err=0.55580 F=0.94965 target=24151.45079 diff=0.00034
-iter=117 err=0.55500 F=0.94943 target=24144.76091 diff=0.00028
-iter=118 err=0.55680 F=0.94977 target=24135.34313 diff=0.00039
-iter=119 err=0.55320 F=0.95050 target=24126.29651 diff=0.00037
-iter=120 err=0.55540 F=0.94971 target=24121.22253 diff=0.00021
-iter=121 err=0.55600 F=0.94979 target=24115.41081 diff=0.00024
-iter=122 err=0.55580 F=0.94987 target=24110.83122 diff=0.00019
-iter=123 err=0.55320 F=0.94974 target=24108.02097 diff=0.00012
-iter=124 err=0.55300 F=0.95003 target=24095.59069 diff=0.00052
-iter=125 err=0.55280 F=0.95004 target=24092.87629 diff=0.00011
-iter=126 err=0.55440 F=0.95012 target=24086.43399 diff=0.00027
-iter=127 err=0.55380 F=0.95027 target=24087.63387 diff=0.00005
-iter=128 err=0.55400 F=0.95034 target=24083.61564 diff=0.00017
-iter=129 err=0.55520 F=0.95039 target=24080.01898 diff=0.00015
-iter=130 err=0.55560 F=0.95012 target=24075.58908 diff=0.00018
-iter=131 err=0.55360 F=0.95187 target=24071.71524 diff=0.00016
-iter=132 err=0.55440 F=0.95193 target=24066.35003 diff=0.00022
-iter=133 err=0.55440 F=0.95176 target=24062.54605 diff=0.00016
-iter=134 err=0.55380 F=0.95159 target=24058.84341 diff=0.00015
-iter=135 err=0.55480 F=0.95142 target=24058.35368 diff=0.00002
-iter=136 err=0.55460 F=0.95152 target=24055.71606 diff=0.00011
-iter=137 err=0.55360 F=0.95149 target=24050.68951 diff=0.00021
-iter=138 err=0.55320 F=0.95172 target=24047.47360 diff=0.00013
-iter=139 err=0.55240 F=0.95179 target=24044.85916 diff=0.00011
-iter=140 err=0.55220 F=0.95130 target=24041.29645 diff=0.00015
-iter=141 err=0.55320 F=0.95128 target=24038.19833 diff=0.00013
-iter=142 err=0.55260 F=0.95127 target=24035.59743 diff=0.00011
-iter=143 err=0.55100 F=0.95126 target=24033.90285 diff=0.00007
-iter=144 err=0.55100 F=0.95187 target=24031.92117 diff=0.00008
-iter=145 err=0.55160 F=0.95178 target=24029.86106 diff=0.00009
-iter=146 err=0.55200 F=0.95178 target=24027.14961 diff=0.00011
-iter=147 err=0.55120 F=0.95185 target=24025.68087 diff=0.00006
-iter=148 err=0.55120 F=0.95191 target=24024.29622 diff=0.00006
-iter=149 err=0.55180 F=0.95192 target=24023.00217 diff=0.00005
-iter=150 err=0.55140 F=0.95196 target=24020.45757 diff=0.00011
-iter=151 err=0.55320 F=0.95181 target=24018.77385 diff=0.00007
-iter=152 err=0.55280 F=0.95160 target=24017.39829 diff=0.00006
-iter=153 err=0.55220 F=0.95037 target=24016.41252 diff=0.00004
-iter=154 err=0.55320 F=0.95033 target=24013.85898 diff=0.00011
-iter=155 err=0.55280 F=0.95043 target=24012.97477 diff=0.00004
-iter=156 err=0.55240 F=0.95043 target=24012.19480 diff=0.00003
-iter=157 err=0.55140 F=0.95052 target=24010.59441 diff=0.00007
-iter=158 err=0.55160 F=0.95074 target=24008.85227 diff=0.00007
-iter=159 err=0.55160 F=0.95083 target=24007.68380 diff=0.00005
-iter=160 err=0.55220 F=0.95064 target=24006.93227 diff=0.00003
-iter=161 err=0.55240 F=0.95063 target=24006.29616 diff=0.00003
+iter=0 err=0.99701 F=0.27248 target=569129.13782 diff=1.00000
+iter=1 err=0.98328 F=0.41660 target=374189.61321 diff=0.34252
+iter=2 err=0.98189 F=0.48394 target=191768.63100 diff=0.48751
+iter=3 err=0.97532 F=0.53206 target=154691.98484 diff=0.19334
+iter=4 err=0.95960 F=0.59329 target=119507.43069 diff=0.22745
+iter=5 err=0.94169 F=0.66996 target=98008.26410 diff=0.17990
+iter=6 err=0.90229 F=0.72337 target=81809.57961 diff=0.16528
+iter=7 err=0.88338 F=0.75201 target=73342.32130 diff=0.10350
+iter=8 err=0.85035 F=0.79236 target=62800.28010 diff=0.14374
+iter=9 err=0.83761 F=0.80195 target=60830.84417 diff=0.03136
+iter=10 err=0.80657 F=0.84085 target=51464.12796 diff=0.15398
+iter=11 err=0.80040 F=0.84306 target=49733.83731 diff=0.03362
+iter=12 err=0.78408 F=0.86305 target=46354.21370 diff=0.06795
+iter=13 err=0.77413 F=0.86520 target=43737.52833 diff=0.05645
+iter=14 err=0.76537 F=0.87750 target=41600.21561 diff=0.04887
+iter=15 err=0.75423 F=0.88435 target=39698.18043 diff=0.04572
+iter=16 err=0.75443 F=0.88576 target=38683.00975 diff=0.02557
+iter=17 err=0.74667 F=0.89176 target=37472.20367 diff=0.03130
+iter=18 err=0.73274 F=0.89571 target=36383.15512 diff=0.02906
+iter=19 err=0.72338 F=0.90081 target=35416.69716 diff=0.02656
+iter=20 err=0.71244 F=0.90430 target=34673.84996 diff=0.02097
+iter=21 err=0.70726 F=0.90601 target=34276.00713 diff=0.01147
+iter=22 err=0.70229 F=0.90775 target=33494.75965 diff=0.02279
+iter=23 err=0.69532 F=0.90973 target=33327.63235 diff=0.00499
+iter=24 err=0.68975 F=0.91103 target=32556.05000 diff=0.02315
+iter=25 err=0.68736 F=0.91249 target=32220.17755 diff=0.01032
+iter=26 err=0.68040 F=0.91457 target=31747.89109 diff=0.01466
+iter=27 err=0.67761 F=0.91623 target=31247.25523 diff=0.01577
+iter=28 err=0.67562 F=0.91449 target=30875.69115 diff=0.01189
+iter=29 err=0.66726 F=0.91670 target=30414.89784 diff=0.01492
+iter=30 err=0.66746 F=0.91684 target=30165.39689 diff=0.00820
+iter=31 err=0.66348 F=0.91893 target=29895.47854 diff=0.00895
+iter=32 err=0.66587 F=0.91833 target=29532.73184 diff=0.01213
+iter=33 err=0.66010 F=0.92114 target=29166.77072 diff=0.01239
+iter=34 err=0.65294 F=0.92392 target=28938.88998 diff=0.00781
+iter=35 err=0.64637 F=0.92508 target=28670.09998 diff=0.00929
+iter=36 err=0.64378 F=0.92732 target=28286.84431 diff=0.01337
+iter=37 err=0.64080 F=0.92676 target=28076.17023 diff=0.00745
+iter=38 err=0.63542 F=0.92783 target=27793.14506 diff=0.01008
+iter=39 err=0.63682 F=0.92802 target=27699.59978 diff=0.00337
+iter=40 err=0.63383 F=0.92847 target=27532.18940 diff=0.00604
+iter=41 err=0.63025 F=0.92811 target=27336.00157 diff=0.00713
+iter=42 err=0.62726 F=0.93082 target=27166.94714 diff=0.00618
+iter=43 err=0.62428 F=0.93304 target=26984.09159 diff=0.00673
+iter=44 err=0.62189 F=0.93341 target=26896.99812 diff=0.00323
+iter=45 err=0.62209 F=0.93352 target=26804.11056 diff=0.00345
+iter=46 err=0.61891 F=0.93349 target=26662.57879 diff=0.00528
+iter=47 err=0.61692 F=0.93519 target=26548.27492 diff=0.00429
+iter=48 err=0.61393 F=0.93605 target=26402.28479 diff=0.00550
+iter=49 err=0.61114 F=0.93461 target=26348.79398 diff=0.00203
+iter=50 err=0.60796 F=0.93663 target=26250.20551 diff=0.00374
+iter=51 err=0.60736 F=0.93719 target=26179.85962 diff=0.00268
+iter=52 err=0.60736 F=0.93804 target=26110.28520 diff=0.00266
+iter=53 err=0.60856 F=0.93916 target=26011.22158 diff=0.00379
+iter=54 err=0.60537 F=0.93941 target=25929.47210 diff=0.00314
+iter=55 err=0.60537 F=0.93940 target=25884.51944 diff=0.00173
+iter=56 err=0.60338 F=0.93964 target=25836.76553 diff=0.00184
+iter=57 err=0.60119 F=0.94013 target=25769.23513 diff=0.00261
+iter=58 err=0.59642 F=0.94027 target=25703.94546 diff=0.00253
+iter=59 err=0.59323 F=0.94113 target=25594.44979 diff=0.00426
+iter=60 err=0.59363 F=0.94185 target=25556.04058 diff=0.00150
+iter=61 err=0.59104 F=0.94248 target=25506.49937 diff=0.00194
+iter=62 err=0.59662 F=0.94225 target=25537.93462 diff=0.00123
+iter=63 err=0.59085 F=0.94264 target=25481.33436 diff=0.00222
+iter=64 err=0.59025 F=0.94289 target=25443.27224 diff=0.00149
+iter=65 err=0.58886 F=0.94298 target=25371.97063 diff=0.00280
+iter=66 err=0.58587 F=0.94356 target=25321.91756 diff=0.00197
+iter=67 err=0.58448 F=0.94379 target=25272.99420 diff=0.00193
+iter=68 err=0.58527 F=0.94379 target=25228.58407 diff=0.00176
+iter=69 err=0.58587 F=0.94477 target=25167.64467 diff=0.00242
+iter=70 err=0.58388 F=0.94515 target=25153.66183 diff=0.00056
+iter=71 err=0.58348 F=0.94400 target=25118.53021 diff=0.00140
+iter=72 err=0.58289 F=0.94415 target=25095.47813 diff=0.00092
+iter=73 err=0.58149 F=0.94438 target=25067.03135 diff=0.00113
+iter=74 err=0.57950 F=0.94489 target=25026.96287 diff=0.00160
+iter=75 err=0.57672 F=0.94557 target=24990.54045 diff=0.00146
+iter=76 err=0.57652 F=0.94518 target=24967.53505 diff=0.00092
+iter=77 err=0.57811 F=0.94491 target=24951.87765 diff=0.00063
+iter=78 err=0.57652 F=0.94540 target=24925.64709 diff=0.00105
+iter=79 err=0.57572 F=0.94522 target=24915.18290 diff=0.00042
+iter=80 err=0.57453 F=0.94540 target=24866.50267 diff=0.00195
+iter=81 err=0.57294 F=0.94551 target=24853.33567 diff=0.00053
+iter=82 err=0.57194 F=0.94557 target=24832.60306 diff=0.00083
+iter=83 err=0.56935 F=0.94607 target=24811.24542 diff=0.00086
+iter=84 err=0.56557 F=0.94649 target=24784.27377 diff=0.00109
+iter=85 err=0.56716 F=0.94631 target=24768.79274 diff=0.00062
+iter=86 err=0.56776 F=0.94631 target=24752.44406 diff=0.00066
+iter=87 err=0.56736 F=0.94648 target=24739.11758 diff=0.00054
+iter=88 err=0.56776 F=0.94641 target=24723.32781 diff=0.00064
+iter=89 err=0.56478 F=0.94698 target=24707.41883 diff=0.00064
+iter=90 err=0.56199 F=0.94721 target=24697.28619 diff=0.00041
+iter=91 err=0.55940 F=0.94798 target=24678.61695 diff=0.00076
+iter=92 err=0.55900 F=0.94810 target=24658.59927 diff=0.00081
+iter=93 err=0.55861 F=0.94907 target=24645.30792 diff=0.00054
+iter=94 err=0.55960 F=0.94911 target=24627.57028 diff=0.00072
+iter=95 err=0.56000 F=0.94920 target=24615.13172 diff=0.00051
+iter=96 err=0.56040 F=0.94988 target=24599.89026 diff=0.00062
+iter=97 err=0.55801 F=0.95076 target=24581.85091 diff=0.00073
+iter=98 err=0.56199 F=0.95129 target=24591.65758 diff=0.00040
+iter=99 err=0.55940 F=0.95173 target=24571.36899 diff=0.00083
+iter=100 err=0.55960 F=0.95137 target=24558.96918 diff=0.00050
+iter=101 err=0.55960 F=0.95156 target=24545.55290 diff=0.00055
+iter=102 err=0.55960 F=0.95136 target=24535.94856 diff=0.00039
+iter=103 err=0.55960 F=0.95080 target=24523.19229 diff=0.00052
+iter=104 err=0.55841 F=0.95095 target=24515.39220 diff=0.00032
+iter=105 err=0.55602 F=0.95124 target=24505.90251 diff=0.00039
+iter=106 err=0.55761 F=0.95159 target=24497.39537 diff=0.00035
+iter=107 err=0.55483 F=0.95151 target=24488.59043 diff=0.00036
+iter=108 err=0.55403 F=0.95138 target=24483.45227 diff=0.00021
+iter=109 err=0.55483 F=0.95134 target=24473.59986 diff=0.00040
+iter=110 err=0.55423 F=0.95139 target=24467.15838 diff=0.00026
+iter=111 err=0.55502 F=0.95129 target=24459.21670 diff=0.00032
+iter=112 err=0.55542 F=0.95163 target=24451.99145 diff=0.00030
+iter=113 err=0.55443 F=0.95165 target=24447.99673 diff=0.00016
+iter=114 err=0.55502 F=0.95161 target=24441.55345 diff=0.00026
+iter=115 err=0.55343 F=0.95041 target=24437.23800 diff=0.00018
+iter=116 err=0.55602 F=0.95028 target=24430.21060 diff=0.00029
+iter=117 err=0.55463 F=0.95028 target=24423.52322 diff=0.00027
+iter=118 err=0.55343 F=0.95044 target=24419.33733 diff=0.00017
+iter=119 err=0.55184 F=0.95054 target=24413.49335 diff=0.00024
+iter=120 err=0.55204 F=0.95075 target=24407.83554 diff=0.00023
+iter=121 err=0.55244 F=0.95074 target=24404.59884 diff=0.00013
+iter=122 err=0.55483 F=0.95065 target=24401.69265 diff=0.00012
+iter=123 err=0.55642 F=0.95047 target=24398.12686 diff=0.00015
+iter=124 err=0.55542 F=0.95087 target=24392.82155 diff=0.00022
+iter=125 err=0.55562 F=0.95081 target=24387.62744 diff=0.00021
+iter=126 err=0.55562 F=0.95089 target=24384.63552 diff=0.00012
+iter=127 err=0.55443 F=0.95088 target=24382.02053 diff=0.00011
+iter=128 err=0.55383 F=0.95097 target=24378.07034 diff=0.00016
+iter=129 err=0.55483 F=0.95070 target=24372.54251 diff=0.00023
+iter=130 err=0.55443 F=0.95079 target=24368.97734 diff=0.00015
+iter=131 err=0.55483 F=0.95068 target=24365.99143 diff=0.00012
+iter=132 err=0.55542 F=0.95123 target=24362.00363 diff=0.00016
+iter=133 err=0.55403 F=0.95185 target=24358.72925 diff=0.00013
+iter=134 err=0.55403 F=0.95180 target=24357.38116 diff=0.00006
+iter=135 err=0.55323 F=0.95191 target=24354.50857 diff=0.00012
+iter=136 err=0.55423 F=0.95150 target=24352.79878 diff=0.00007
+iter=137 err=0.55343 F=0.95168 target=24350.82823 diff=0.00008
+iter=138 err=0.55244 F=0.95159 target=24348.44967 diff=0.00010
+iter=139 err=0.55284 F=0.95167 target=24347.16207 diff=0.00005
+iter=140 err=0.55363 F=0.95159 target=24343.74489 diff=0.00014
+iter=141 err=0.55244 F=0.95154 target=24344.83231 diff=0.00004
+iter=142 err=0.55403 F=0.95168 target=24342.04068 diff=0.00011
+iter=143 err=0.55284 F=0.95162 target=24339.31737 diff=0.00011
+iter=144 err=0.55343 F=0.95035 target=24336.50871 diff=0.00012
+iter=145 err=0.55343 F=0.95054 target=24334.99403 diff=0.00006
+iter=146 err=0.55403 F=0.95041 target=24333.06984 diff=0.00008
+iter=147 err=0.55403 F=0.95056 target=24331.77273 diff=0.00005
+iter=148 err=0.55483 F=0.95055 target=24330.86717 diff=0.00004
+iter=149 err=0.55502 F=0.95172 target=24329.38648 diff=0.00006
+iter=150 err=0.55483 F=0.95164 target=24328.11390 diff=0.00005
+iter=151 err=0.55522 F=0.95151 target=24326.80229 diff=0.00005
+iter=152 err=0.55463 F=0.95039 target=24325.65105 diff=0.00005
+iter=153 err=0.55443 F=0.95042 target=24324.20354 diff=0.00006
+iter=154 err=0.55363 F=0.95043 target=24323.13924 diff=0.00004
+iter=155 err=0.55343 F=0.95048 target=24322.51317 diff=0.00003
+iter=156 err=0.55363 F=0.95036 target=24321.79208 diff=0.00003
 
 Done! writing model file ... 
