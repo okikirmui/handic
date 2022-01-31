@@ -1,4 +1,5 @@
 *.bin
 model
 *.dic
+training_result.txt
 
