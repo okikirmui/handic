@@ -1,6 +1,5 @@
 *.bin
 corpus
-model
 *.dic
 training_result.txt
 
