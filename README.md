@@ -42,13 +42,8 @@ $ mecab-dict-index -f utf8 -t utf8
 
 ## Author
 
-<<<<<<< HEAD
   - Yoshinori Sugai
   - Kindai University
-=======
-    * Yoshinori Sugai
-    * Kindai University
->>>>>>> a51d7f1f12a4ca8d054e2892e3703cd44b29a304
 
 ## Copyrights
 
