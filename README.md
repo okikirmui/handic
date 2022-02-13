@@ -12,13 +12,13 @@ HanDic(한딕)は，形態素解析エンジン[MeCab](https://taku910.github.io
 git clone
 
 ```console
-$ git clone https://github.com/okikirmui/handic_working.git
+$ git clone https://github.com/okikirmui/handic.git
 ```
 
 cloneしたリポジトリ配下のseedディレクトリに移動
 
 ```console
-$ cd handic_working/seed/
+$ cd handic/seed/
 ```
 
 バイナリ辞書の作成
