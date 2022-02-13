@@ -15,10 +15,10 @@ git clone
 $ git clone https://github.com/okikirmui/handic_working.git
 ```
 
-cloneしたリポジトリに移動
+cloneしたリポジトリ配下のseedディレクトリに移動
 
 ```console
-$ cd handic_working
+$ cd handic_working/seed/
 ```
 
 バイナリ辞書の作成
