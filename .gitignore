@@ -3,4 +3,12 @@ corpus
 *.dic
 training_result.txt
 .DS_Store
+autom4te.cache/
+config.log
+config.status
+configure
+install-sh
+Makefile
+Makefile.in
+missing
 
