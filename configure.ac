@@ -48,18 +48,22 @@ do
     MECAB_USER_DATA=`echo "${MECAB_USER_DATA} ${d}.dic"`
     MECAB_DIC=`echo "${MECAB_DIC}" | sed -e "s% ${d} % %"`
 done
-MECAB_DEF="char.def unk.def matrix.def"
+MECAB_DEF="matrix.def"
+MECAB_PRE_DEF="char.def unk.def feature.def rewrite.def"
 MECAB_PRE_DATA="dicrc"
 MECAB_SYS_DATA="char.bin unk.dic sys.dic matrix.bin"
 AC_SUBST(MECAB_DIC)
 AC_SUBST(MECAB_DEF)
+AC_SUBST(MECAB_PRE_DEF)
 AC_SUBST(MECAB_PRE_DATA)
 AC_SUBST(MECAB_SYS_DATA)
 AC_SUBST(MECAB_USER_DATA)
 
 MECAB_DICT_INDEX="`${MECAB_CONFIG} --libexecdir`/mecab-dict-index"
+MECAB_DICT_GEN="`${MECAB_CONFIG} --libexecdir`/mecab-dict-gen"
 MECAB_MECABRC="`${MECAB_CONFIG} --sysconfdir`/mecabrc"
 AC_SUBST(MECAB_DICT_INDEX)
+AC_SUBST(MECAB_DICT_GEN)
 AC_SUBST(MECAB_MECABRC)
 
 AC_CONFIG_FILES([Makefile
