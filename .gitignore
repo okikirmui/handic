@@ -2,4 +2,5 @@
 corpus
 *.dic
 training_result.txt
+.DS_Store
 
