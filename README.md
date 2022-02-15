@@ -26,20 +26,20 @@ $ cd handic/seed/
 バイナリ辞書の作成
 
 ```console
-$ /usr/local/libexec/mecab-dict-index -f utf8 -t utf8
+$ /usr/local/libexec/mecab/mecab-dict-index -f utf8 -t utf8
 ```
 
 パラメータ学習用のモデルファイル`model`が同梱されているので，それを使って配布用辞書を作成（インストール先が`/usr/local/lib/mecab/dic/handic`の場合）
 
 ```console
-$ /usr/local/libexec/mecab-dict-gen -o /usr/local/lib/mecab/dic/handic -m model
+$ /usr/local/libexec/mecab/mecab-dict-gen -o /usr/local/lib/mecab/dic/handic -m model
 ```
 
 解析用バイナリ辞書の作成
 
 ```console
 $ cd /usr/local/lib/mecab/dic/handic
-$ /usr/local/libexec/mecab-dict-index -f utf8 -t utf8
+$ /usr/local/libexec/mecab/mecab-dict-index -f utf8 -t utf8
 ```
 
 ## Usage
