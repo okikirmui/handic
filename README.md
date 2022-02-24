@@ -17,10 +17,18 @@ git clone
 $ git clone https://github.com/okikirmui/handic.git
 ```
 
+もしくはZIPファイルをダウンロード
+
 cloneしたリポジトリ配下のseedディレクトリに移動
 
 ```console
 $ cd handic/seed/
+```
+
+ZIPファイルをダウンロードした場合は解凍し，seedディレクトリに移動
+
+```console
+$ cd handic-master/seed/
 ```
 
 バイナリ辞書の作成
