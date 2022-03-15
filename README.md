@@ -78,9 +78,9 @@ HanDicは，UTF-8エンコーディングされたテキストを入力として
 また，入力は通常のハングル（Hangul Syllables「ハングル音節文字」領域の文字，いわゆる「完成型ハングル」）ではなく，初声・中声・終声の字母に分解した入力（Hangul Jamo「ハングル字母」領域の文字）である必要があります．
 例えば完成型ハングルの「몸」（U+BAB8）は，字母に分解すると「ㅁ」（U+1106）「ㅗ」（U+1169）「ㅁ」（U+11B7）となります．
 
-こうした字母への分解は，任意のスクリプトを使って行っても構いません．なお，本プロジェクトではPerl用スクリプトk2jamo.plとPython用スクリプトpy_k2jamo.py（[ダウンロード-OSDN](https://ja.osdn.net/rel/handic/tools/k2jamo)）を作成し，配布しています．
+こうした字母への分解は，任意のスクリプトを使って行っても構いません．なお，本プロジェクトでは`tools`ディレクトリにPerl用スクリプト`k2jamo.pl`とPython用スクリプト`k2jamo.py`を同梱しています．
 
-コマンドラインやターミナルで，k2jamo.plを使ってinput.txt（例）を解析する場合：
+コマンドラインやターミナルで，`k2jamo.pl`を使って`input.txt`（例）を解析する場合：
 
 ```console
 $ perl k2jamo.pl input.txt | mecab -d /usr/local/lib/mecab/dic/handic
