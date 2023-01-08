@@ -1,6 +1,6 @@
 # HanDic: morphological analysis dictionary for contemporary Korean
 
-HanDic(한딕)は，形態素解析エンジン[MeCab](https://taku910.github.io/mecab/)で現代韓国語を解析するための辞書です．11万を超える辞書項目，書きことばを中心とした5000文以上の学習用データで構築されています．
+HanDic(한딕)は，形態素解析エンジン[MeCab](https://taku910.github.io/mecab/)で現代韓国語を解析するための辞書です．11万を超える辞書項目，書きことばを中心とした6000文以上の[学習用データ](source_list.md)で構築されています．
 
 著作権の問題があるため学習用データ自体の配布はしませんが，学習用モデルファイルはパッケージに含まれています．
 
