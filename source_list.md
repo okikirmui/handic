@@ -165,6 +165,7 @@ HanDicを構築する際，以下のテキストを解析した結果が学習�
   67. 동아일보, [오늘부터 홍콩·마카오 입국자도 음성확인서 제출…對中 검역 확대](https://www.donga.com/news/Society/article/all/20230107/117330220/1), 2023/1/7
   68. 경향신문, [‘포켓몬 가오레’ 게임기 앞, 어른들이 줄 섰다](https://m.khan.co.kr/national/national-general/article/202301092132005), 2023/1/9
   69. 한국일보, [요즘 초중고 졸업식은 언제?... 장미 값은 알고 있다](https://www.hankookilbo.com/News/Read/A2023010913480004577), 2023/1/10
+  70. 동아일보, [이재용·최태원·정의선 등 총수들 UAE·다보스 ‘경제외교’ 총출동](https://www.donga.com/news/Economy/article/all/20230113/117424608/1), 2023/1/13
 
 ## お断り
 
