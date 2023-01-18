@@ -166,6 +166,8 @@ HanDicを構築する際，以下のテキストを解析した結果が学習�
   68. 경향신문, [‘포켓몬 가오레’ 게임기 앞, 어른들이 줄 섰다](https://m.khan.co.kr/national/national-general/article/202301092132005), 2023/1/9
   69. 한국일보, [요즘 초중고 졸업식은 언제?... 장미 값은 알고 있다](https://www.hankookilbo.com/News/Read/A2023010913480004577), 2023/1/10
   70. 동아일보, [이재용·최태원·정의선 등 총수들 UAE·다보스 ‘경제외교’ 총출동](https://www.donga.com/news/Economy/article/all/20230113/117424608/1), 2023/1/13
+  71. 동아일보, [여야 70여명 ‘초당적 정치개혁 모임’ 첫 발…선거제도 개편 논의](https://www.donga.com/news/Politics/article/all/20230116/117463454/1), 2023/1/16
+  72. 연합뉴스, [국가교육위원회 올해 첫 회의…대입 개편 특위 구성(종합)](https://www.yna.co.kr/view/AKR20230117042451530), 2023/1/17
 
 ## お断り
 
