@@ -174,6 +174,7 @@ HanDicを構築する際，以下のテキストを解析した結果が学習�
   9. 연합뉴스, [사람 같다는 챗GPT 뜨는데…우리 AI 기술 현주소는?](https://www.yna.co.kr/view/AKR20230130074900017), 2023/1/31
   10. 중앙일보, [일본 순방 마치고 돌아온 尹...김기현·주호영 등 영접](https://www.joongang.co.kr/article/25148055#home), 2023/3/17
   11. 조선일보, [\[단독\] 주미대사에 주미공사 거친 조현동... 안보실장 조태용은 외시출신 정통 외교관](https://www.chosun.com/politics/diplomacy-defense/2023/03/30/C4HNTXIK2RAQPM3OMNUYMO4PGM/), 2023/3/30
+  12. 노컷뉴스, [기대인플레 하락에도 기준금리 높일 준비하는 미…한국의 선택은?](https://www.nocutnews.co.kr/news/5932121), 2023/4/23
 
 ## お断り
 
