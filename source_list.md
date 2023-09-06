@@ -176,6 +176,7 @@ HanDicを構築する際，以下のテキストを解析した結果が学習�
   11. 조선일보, [\[단독\] 주미대사에 주미공사 거친 조현동... 안보실장 조태용은 외시출신 정통 외교관](https://www.chosun.com/politics/diplomacy-defense/2023/03/30/C4HNTXIK2RAQPM3OMNUYMO4PGM/), 2023/3/30
   12. 노컷뉴스, [기대인플레 하락에도 기준금리 높일 준비하는 미…한국의 선택은?](https://www.nocutnews.co.kr/news/5932121), 2023/4/23
   13. 한겨레, [차라리 ‘후쿠시마 오염수 시음회’ 열고, 줄지어 원샷을 \[아침햇발\]](https://www.hani.co.kr/arti/opinion/column/1099334.html), 2023/7/9
+  14. 연합뉴스, [을지로입구역 장난감창고방 작은문 열자 거대 비밀공간](https://www.yna.co.kr/view/AKR20230905102000004), 2023/9/5
 
 ## お断り
 
