@@ -8,3 +8,8 @@ config-charset = utf8
 node-format-chasen = %f[6]\t%M\t%f[5]\t%F-[0,1,2]\t%f[3]\t%f[4]\n
 unk-format-chasen = %f[6]\t%M\t%f[6]\t%F-[0,1,2]\t\t\n
 eos-format-chasen = EOS\n
+
+; Tokenize option for Korean
+node-format-tokenize = %f[6]\s
+unk-format-tokenize = %m\s
+eos-format-tokenize = \n
