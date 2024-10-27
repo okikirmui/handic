@@ -1,8 +1,11 @@
 # HanDic: morphological analysis dictionary for contemporary Korean
 
-HanDic(한딕)は，形態素解析エンジン[MeCab](https://taku910.github.io/mecab/)で現代韓国語を解析するための辞書です．12万を超える辞書項目，書きことばを中心とした6000文以上の[学習用データ](source_list.md)で構築されています．
+[日本語Readme](README_ja.md)
 
-著作権の問題があるため学習用データ自体の配布はしませんが，学習用モデルファイルはパッケージに含まれています．
+HanDic(한딕)은 형태소 분석 엔진 [MeCab](https://taku910.github.io/mecab/)로 현대 한국어를 분석하기 위한 사전입니다.
+12만 개 이상의 사전 항목과 문어를 중심으로 약 6000개 이상의 [학습용 데이터](docs/source_list.md)로 구축되어 있습니다.
+
+저작권 문제 때문에 학습용 데이터 자체는 배포하지 않지만, 학습용 모델 파일은 패키지에 포함되어 있습니다.
 
 ## Requirements
 
@@ -13,86 +16,137 @@ HanDic(한딕)は，形態素解析エンジン[MeCab](https://taku910.github.io
 
 git clone
 
-```console
+```Shell
 $ git clone https://github.com/okikirmui/handic.git
 ```
 
-もしくはZIPファイルをダウンロード
+혹은 ZIP파일을 다운로드
 
-cloneしたリポジトリ配下のseedディレクトリに移動
+seed 디렉토리로 이동
 
-```console
+```Shell
 $ cd handic/seed/
 ```
 
-ZIPファイルをダウンロードした場合は解凍し，seedディレクトリに移動
+ZIP 파일을 다운받은 경우, 압축을 풀고 seed 디렉토리로 이동
 
-```console
-$ cd handic-master/seed/
+```Shell
+$ cd handic-main/seed/
 ```
 
-バイナリ辞書の作成
+Binary 사전 작성
 
-```console
+```Shell
 $ /usr/local/libexec/mecab/mecab-dict-index -f utf8 -t utf8
 ```
 
-パラメータ学習用のモデルファイル`model`が同梱されているので，それを使って配布用辞書を作成（インストール先が`/usr/local/lib/mecab/dic/handic`の場合）
+파라미터 학습용 모델 파일 `model`을 사용하여 배포용 사전을 작성(`/usr/local/lib/mecab/dic/handic`에 설치할 경우)
 
-```console
+```Shell
 $ /usr/local/libexec/mecab/mecab-dict-gen -o /usr/local/lib/mecab/dic/handic -m model
 ```
 
-解析用バイナリ辞書の作成
+분석용 binary 사전 작성
 
-```console
+```Shell
 $ cd /usr/local/lib/mecab/dic/handic
 $ /usr/local/libexec/mecab/mecab-dict-index -f utf8 -t utf8
 ```
 
+분석할 때 실제로 필요한 파일은 `char.bin`, `dicrc`, `matrix.bin`, `sys.dic`, `unk.dic`입니다.
+
 ## Usage
 
-### 実行時に辞書を指定する
+### 실행시 사전을 지정
 
-MeCab実行時に`-d`オプションでHanDic辞書ファイルのあるディレクトリを指定します．
+MeCab를 실행할 때 `-d` 옵션으로 사전 파일이 포함된 디렉토리를 지정할 수 있습니다.
 
-```console
+```Shell
 $ mecab -d /usr/local/lib/mecab/dic/handic
 ```
 
-この方法では，実行するたびに辞書を指定する必要があります．
+위 방법으로는 실행할 때마다 사전을 지정할 필요가 있습니다.
 
-### 設定ファイルで辞書を指定する
+### 설정 파일에 사전 경로 기술
 
-ホームディレクトリに`.mecabrc`を作成して，`dicdir`にHanDic辞書ファイルのあるディレクトリを記述します．
+홈 디렉토리에 `.mecabrc` 파일을 작성하여 `dicdir`에 HanDic 사전 파일이 포함된 디렉토리 경로를 기술할 수 있습니다.
 
 ```text
 dicdir = /usr/local/lib/mecab/dic/handic
 ```
 
-この方法では，常にHanDicを使って解析することになります．
+위 방법으로는 항상 HanDic으로 분석하게 됩니다.
 
-### 入力を与える
+### 입력문
 
-HanDicは，UTF-8エンコーディングされたテキストを入力として形態素解析を行います．
-また，入力は通常のハングル（Hangul Syllables「ハングル音節文字」領域の文字，いわゆる「完成型ハングル」）ではなく，初声・中声・終声の字母に分解した入力（Hangul Jamo「ハングル字母」領域の文字）である必要があります．
-例えば完成型ハングルの「몸」（U+BAB8）は，字母に分解すると「ㅁ」（U+1106）「ㅗ」（U+1169）「ㅁ」（U+11B7）となります．
+HanDic은 UTF-8 인코딩된 텍스트를 입력하여 형태소 분석을 실행합니다.
+입력할 때에는 완성형 한글(Hangul Syllables 영역의 문자)가 아니라 초성·중성·종성으로 분리한 첫가끝 코드(조합형, 한글 자모 영역의 문자)로 기술할 필요가 있습니다.
+예를 들어 완성형 한글의 '몸'(U+BAB8)은 한글 자모 영역의 글자를 사용하여 'ㅁ'(U+1106), 'ㅗ'(U+1169), 'ㅁ'(U+11B7)으로 나누어서 입력으로 주어야 합니다.
 
-こうした字母への分解は，任意のスクリプトを使って行っても構いません．なお，本プロジェクトでは`tools`ディレクトリにPerl用スクリプト`k2jamo.pl`とPython用スクリプト`k2jamo.py`を同梱しています．
+이러한 변환 처리는 임의로 스크립트를 만들어서 처리해도 괜찮습니다.
+이 프로젝트에서는 Perl 스크립트 `k2jamo.pl`과 Python 스크립트 `k2jamo.py`를 제공하고 있습니다. `tools` 디렉토리를 참조하십시오.
 
-コマンドラインやターミナルで，`k2jamo.pl`を使って`input.txt`（例）を解析する場合：
+`k2jamo.pl`로 `input.txt`를 분석할 경우:
 
-```console
+```Shell
 $ perl k2jamo.pl input.txt | mecab -d /usr/local/lib/mecab/dic/handic
 ```
 
-あるいはコマンドラインやターミナルで直接入力をする場合：
+혹은 문장을 직접 입력할 경우:
 
-```console
+```Shell
 $ echo "겨울 방학 때 뭐 했어요?" | perl k2jamo.pl | mecab -d /usr/local/lib/mecab/dic/handic
 ```
 
-のように行うことができます．
+처럼 처리할 수 있습니다.
+
+### 토큰화 처리(tokenize)
+
+출력 포맷을 지정하는 `-O` 옵션을 사용하여 토큰화 처리를 할 수 있습니다.
+출력 포맷으로 `tokenize`를 지정합니다.
+
+```Shell
+$ echo "뜻을 가진 가장 작은 말의 단위. ‘이야기책’의 ‘이야기’, ‘책’ 따위이다." | perl k2jamo.pl | mecab -d /usr/local/lib/mecab/dic/handic -O tokenize
+뜻 을 가지 ㄴ 가장 작으 ㄴ 말 의 단위 . ‘ 이야기책 ’ 의 ‘ 이야기 ’ , ‘ 책 ’ 따위 이 다 .
+```
+
+## 사용법(Python)
+
+[PyPI](https://pypi.org/project/handic/)에서 `handic` 패키지를 공개했습니다.
+`mecab-python3` 패키지와 입력문을 변환하기 위한 `jamotools` 등의 패키지와 함께 사용합니다.
+
+설치:
+
+```bash
+pip install handic mecab-python3 jamotools
+```
+
+예:
+
+```Python
+import MeCab
+import handic
+import jamotools
+
+mecaboption = f'-r /dev/null -d {handic.DICDIR}'
+
+tokenizer = MeCab.Tagger(mecaboption)
+tokenizer.parse('')
+
+# 《표준국어대사전》 "형태소" 뜻풀이
+sentence = u'뜻을 가진 가장 작은 말의 단위. ‘이야기책’의 ‘이야기’, ‘책’ 따위이다.'
+
+jamo = jamotools.split_syllables(sentence, jamo_type="JAMO")
+
+node = tokenizer.parseToNode(jamo)
+while node:
+    print(node.surface, node.feature)
+    node = node.next
+```
+
+## 품사 정보
+
+품사 정보에 관한 정보는 [품사 정보](docs/pos_detail.md) 문서를 참조하시기 바랍니다.
 
 ## Author
 
