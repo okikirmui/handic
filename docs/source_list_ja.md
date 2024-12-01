@@ -180,6 +180,9 @@ HanDicを構築する際，以下のテキストを解析した結果が学習�
   13. 한겨레, [차라리 ‘후쿠시마 오염수 시음회’ 열고, 줄지어 원샷을 \[아침햇발\]](https://www.hani.co.kr/arti/opinion/column/1099334.html), 2023/7/9
   14. 연합뉴스, [을지로입구역 장난감창고방 작은문 열자 거대 비밀공간](https://www.yna.co.kr/view/AKR20230905102000004), 2023/9/5
   15. 중앙일보, [연두색 번호판 도입 후…고가 수입 법인차, 이렇게나 줄었다](https://www.joongang.co.kr/article/25234814), 2024/03/13
+  16. 조선일보, [민주당 "감액 예산안, 내일 본회의 상정"](https://www.chosun.com/politics/assembly/2024/12/01/HHWAHHBDLNCZFBBMF6K66KD3GI/), 	2024/12/1
+  17. 동아일보, [‘AI 기본법’ 통과 임박… IT업계 “과도한 규제로 이어져선 안돼”](https://www.donga.com/news/Economy/article/all/20241127/130519081/2), 2024/11/28
+  18. 한국일보, [김 여사 특검 반대 與 '단일대오' 깨지나... 한동훈 "지금 얘기하지 않겠다"](https://www.hankookilbo.com/News/Read/A2024112815240004173), 2024/11/29
 
 ## お断り
 
