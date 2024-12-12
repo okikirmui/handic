@@ -183,7 +183,9 @@ HanDicを構築する際，以下のテキストを解析した結果が学習�
   16. 조선일보, [민주당 "감액 예산안, 내일 본회의 상정"](https://www.chosun.com/politics/assembly/2024/12/01/HHWAHHBDLNCZFBBMF6K66KD3GI/), 	2024/12/1
   17. 동아일보, [‘AI 기본법’ 통과 임박… IT업계 “과도한 규제로 이어져선 안돼”](https://www.donga.com/news/Economy/article/all/20241127/130519081/2), 2024/11/28
   18. 한국일보, [김 여사 특검 반대 與 '단일대오' 깨지나... 한동훈 "지금 얘기하지 않겠다"](https://www.hankookilbo.com/News/Read/A2024112815240004173), 2024/11/29
-
+  19. 조선일보, [김용현 비화폰 찾았다… 계엄 지휘 통제실 CCTV도 확보](https://www.chosun.com/national/national_general/2024/12/12/ZNV72JZ7WJBVHM3FSWE3BKZYGQ/), 2024/12/12
+  20. 연합뉴스, [경찰, 합참 통해 '비상계엄' 계엄사 압수대상 자료 추가확보(종합)](https://www.yna.co.kr/view/AKR20241212112900004), 2024/12/12
+ 
 ## お断り
 
 上記資料を利用するに当たり，不都合があるなどの場合はご連絡ください．
