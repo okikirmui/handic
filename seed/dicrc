@@ -1,6 +1,7 @@
 cost-factor = 800
 bos-feature = BOS/EOS,*,*,*,*,*,*,*,*,*,*
-eval-size = 5
+; eval-size = 5
+eval-size = 7
 unk-eval-size = 3
 config-charset = utf8
 
