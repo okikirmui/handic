@@ -190,6 +190,12 @@ HanDicを構築する際，以下のテキストを解析した結果が学習�
   19. 조선일보, [김용현 비화폰 찾았다… 계엄 지휘 통제실 CCTV도 확보](https://www.chosun.com/national/national_general/2024/12/12/ZNV72JZ7WJBVHM3FSWE3BKZYGQ/), 2024/12/12
   20. 연합뉴스, [경찰, 합참 통해 '비상계엄' 계엄사 압수대상 자료 추가확보(종합)](https://www.yna.co.kr/view/AKR20241212112900004), 2024/12/12
   21. 연합뉴스, [공조본, 尹대통령 18일 출석요구 예정…내란·직권남용 혐의(종합)](https://www.yna.co.kr/view/AKR20241216031551004), 2024/12/16
+  22. 중앙일보, [항공기 사고와 ‘버드 패트롤’](https://www.joongang.co.kr/article/25304052), 2024/12/31
+  23. 중앙일보, [“유압계통에 이상 생겼다면, 조종 자체 힘들었을 것”](https://www.joongang.co.kr/article/25304365), 2025/1/1
+  24. 한국일보, [복지부 "지역필수의사제 본격 도입… 연금개혁 재시동"](https://www.hankookilbo.com/News/Read/A2025011015450000451), 2025/1/10
+  25. 중앙일보, [50명 중 40명이 카공족, 급기야 칸막이까지…외국인마저 혀 찼다](https://www.joongang.co.kr/article/25346072), 2025/6/24
+  26. 동아일보, [성 비위 파문 속… “비대위원장에 조국 추천”](https://www.donga.com/news/Politics/article/all/20250910/132354321/2), 2025/9/10
+  27. 노컷뉴스, [혁신당, '조국 유죄 확정 당일' 노래방 성추행 사건 진상조사](https://www.nocutnews.co.kr/news/6396049), 2025/9/6
 
 ## お断り
 
