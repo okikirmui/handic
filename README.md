@@ -1,54 +1,78 @@
 # HanDic: morphological analysis dictionary for contemporary Korean
 
-[日本語Readme](README_ja.md)
+日本語Readme: [README_ja.md](README_ja.md)
 
 HanDic(한딕)은 형태소 분석 엔진 [MeCab](https://taku910.github.io/mecab/)로 현대 한국어를 분석하기 위한 사전입니다.
 13만 개 이상의 사전 항목과 문어를 중심으로 약 14,000개 이상의 [학습용 데이터](docs/source_list.md)로 구축되어 있습니다.
 
+## Quick Start(Python / pip)
+
+Python 패키지 **`handic`** 을 사용하면 **사전 파일 구축 없이 바로 형태소 분석을 시작**할 수 있습니다. 
+
+### 패키지 설치
+
+```bash
+pip install handic mecab-python3 jamotools
+```
+
+### 형태소 분석 예제
+
+```python
+import handic
+
+text = "우리가 평생 내는 의료비는 어디로 가장 많이 흘러갈까?"
+
+print(handic.pos_tag(text))
+print(handic.tokenize_hangul(text, mode="surface"))
+print(handic.convert_text_to_hanja_hangul(text))
+```
+
+**출력 결과**
+
+```python
+[('우리03', 'NP'), ('가11', 'JKS'), ('평생', 'NNG'), ('내다02', 'VV'), ('는03', 'ETM'), ('의료비', 'NNG'), ('는01', 'JX'), ('어디01', 'NP'), ('로06', 'JKB'), ('가장01', 'MAG'), ('많이', 'MAG'), ('흘러가다', 'VV'), ('ㄹ까', 'EF'), ('?', 'SF')]
+['우리', '가', '평생', '내', '는', '의료비', '는', '어디', '로', '가장', '많이', '흘러가', 'ㄹ까', '?']
+우리가 平生 내는 醫療費는 어디로 가장 많이 흘러갈까?
+```
+
+## HanDic의 특징
+
+- 현대 한국어 형태소 분석용 사전
+- 언어학에 입각한 품사/형태소 설정
+- MeCab 기반의 빠른 처리 속도
+- Python (`handic`) 패키지를 통해 쉽게 사용 가능
+
 저작권 문제 때문에 학습용 데이터 자체는 배포하지 않지만, 학습용 모델 파일은 패키지에 포함되어 있습니다.
 
-## Requirements
+### Python 패키지 (`handic`)
+
+- PyPI: https://pypi.org/project/handic/
+- MeCab Python 래퍼(`mecab-python3`), 한글 처리 페키지(`jamotools`)와 함께 사용
+
+## Dictionary Build
+
+Python을 사용하지 않을 경우, 로컬에서 MeCab으로 형태소 분석 처리를 할 경우에 해당합니다.
+
+### Requirements
 
   - MeCab
   - Python or Perl
 
-## Installation
+### 사전 빌드 절차(요약)
 
-git clone
+`mecab-dict-index`, `mecab-dict-gen` 등의 위치는 `mecab-config --libexecdir`의 출력을 참조하십시오.
+아래에서는 `/usr/local/libexec/mecab`에 있다고 가정.
 
-```Shell
-$ git clone https://github.com/okikirmui/handic.git
-```
-
-혹은 ZIP파일을 다운로드
-
-seed 디렉토리로 이동
-
-```Shell
-$ cd handic/seed/
-```
-
-ZIP 파일을 다운받은 경우, 압축을 풀고 seed 디렉토리로 이동
-
-```Shell
-$ cd handic-main/seed/
-```
-
-Binary 사전 작성
-
-```Shell
-$ /usr/local/libexec/mecab/mecab-dict-index -f utf8 -t utf8
-```
-
-파라미터 학습용 모델 파일 `model`을 사용하여 배포용 사전을 작성(`/usr/local/lib/mecab/dic/handic`에 설치할 경우)
-
-```Shell
-$ /usr/local/libexec/mecab/mecab-dict-gen -o /usr/local/lib/mecab/dic/handic -m model
-```
-
-분석용 binary 사전 작성
-
-```Shell
+```bash
+# git clone
+git clone https://github.com/okikirmui/handic.git
+cd handic
+# 색인
+/usr/local/libexec/mecab/mecab-dict-index -f utf8 -t utf8
+# 기학습 모델 파일 model을 사용하여 binary 사전 구축
+# /usr/local/lib/mecab/dic/handic 디렉토리에 출력
+/usr/local/libexec/mecab/mecab-dict-gen -o /usr/local/lib/mecab/dic/handic -m model
+# 배포용 사전 구축
 $ cd /usr/local/lib/mecab/dic/handic
 $ /usr/local/libexec/mecab/mecab-dict-index -f utf8 -t utf8
 ```
@@ -108,40 +132,6 @@ $ echo "겨울 방학 때 뭐 했어요?" | perl k2jamo.pl | mecab -d /usr/local
 ```Shell
 $ echo "뜻을 가진 가장 작은 말의 단위. ‘이야기책’의 ‘이야기’, ‘책’ 따위이다." | perl k2jamo.pl | mecab -d /usr/local/lib/mecab/dic/handic -O tokenize
 뜻 을 가지 ㄴ 가장 작으 ㄴ 말 의 단위 . ‘ 이야기책 ’ 의 ‘ 이야기 ’ , ‘ 책 ’ 따위 이 다 .
-```
-
-## 사용법(Python)
-
-[PyPI](https://pypi.org/project/handic/)에서 `handic` 패키지를 공개했습니다.
-`mecab-python3` 패키지와 입력문을 변환하기 위한 `jamotools` 등의 패키지와 함께 사용합니다.
-
-설치:
-
-```bash
-pip install handic mecab-python3 jamotools
-```
-
-예:
-
-```Python
-import MeCab
-import handic
-import jamotools
-
-mecaboption = f'-r /dev/null -d {handic.DICDIR}'
-
-tokenizer = MeCab.Tagger(mecaboption)
-tokenizer.parse('')
-
-# 《표준국어대사전》 "형태소" 뜻풀이
-sentence = u'뜻을 가진 가장 작은 말의 단위. ‘이야기책’의 ‘이야기’, ‘책’ 따위이다.'
-
-jamo = jamotools.split_syllables(sentence, jamo_type="JAMO")
-
-node = tokenizer.parseToNode(jamo)
-while node:
-    print(node.surface, node.feature)
-    node = node.next
 ```
 
 ## 품사 정보
