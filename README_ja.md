@@ -1,53 +1,77 @@
 # HanDic: morphological analysis dictionary for contemporary Korean
 
-[한국어 Readme](README.md)
+한국어 Readmel: [README.md](README.md)
 
 HanDic(한딕)は，形態素解析エンジン[MeCab](https://taku910.github.io/mecab/)で現代韓国語を解析するための辞書です．13万を超える辞書項目，書きことばを中心とした14,000文以上の[学習用データ](docs/source_list_ja.md)で構築されています．
 
+## Quick Start(Python / pip)
+
+Pythonパッケージ**`handic`**を使えば，辞書ファイルの構築なしに，すぐ形態素解析を始める　**ことができます．
+
+### パッケージのインストール
+
+```bash
+pip install handic mecab-python3 jamotools
+```
+
+### 形態素解析の例
+
+```python
+import handic
+
+text = "우리가 평생 내는 의료비는 어디로 가장 많이 흘러갈까?"
+
+print(handic.pos_tag(text))
+print(handic.tokenize_hangul(text, mode="surface"))
+print(handic.convert_text_to_hanja_hangul(text))
+```
+
+**出力**
+
+```python
+[('우리03', 'NP'), ('가11', 'JKS'), ('평생', 'NNG'), ('내다02', 'VV'), ('는03', 'ETM'), ('의료비', 'NNG'), ('는01', 'JX'), ('어디01', 'NP'), ('로06', 'JKB'), ('가장01', 'MAG'), ('많이', 'MAG'), ('흘러가다', 'VV'), ('ㄹ까', 'EF'), ('?', 'SF')]
+['우리', '가', '평생', '내', '는', '의료비', '는', '어디', '로', '가장', '많이', '흘러가', 'ㄹ까', '?']
+우리가 平生 내는 醫療費는 어디로 가장 많이 흘러갈까?
+```
+
+## HanDicの特徴
+
+- 現代韓国語の形態素解析用辞書
+- 言語学に基づいた品詞・形態素の設定
+- MeCabを用いるため，処理が高速
+- Python(`handic`)パッケージを用いて簡単に使用可能
+
 著作権の問題があるため学習用データ自体の配布はしませんが，学習用モデルファイルはパッケージに含まれています．
+
+### Pythonパッケージ (`handic`)
+
+- PyPI: https://pypi.org/project/handic/
+- MeCab Pythonラッパー（`mecab-python3`）, ハングル処理パッケージ（`jamotools`）とともに使用
+
+## Dictionary Build
+
+Pythonを使わない場合，ローカルのMeCabで形態素解析処理を行う場合，以下を実行してください．
 
 ## Requirements
 
   - MeCab
   - Python or Perl
 
-## Installation
+### 辞書構築の手順（要約）
 
-git clone
+`mecab-dict-index`や`mecab-dict-gen`などの位置は，`mecab-config --libexecdir`の出力を参照してください．
+ここでは，`/usr/local/libexec/mecab`にあると仮定しています．
 
-```Shell
+```bash
+# git clone
 $ git clone https://github.com/okikirmui/handic.git
-```
-
-もしくはZIPファイルをダウンロード
-
-cloneしたリポジトリ配下のseedディレクトリに移動
-
-```Shell
-$ cd handic/seed/
-```
-
-ZIPファイルをダウンロードした場合は解凍し，seedディレクトリに移動
-
-```Shell
-$ cd handic-main/seed/
-```
-
-バイナリ辞書の作成
-
-```Shell
+$ cd handic
+# indexing
 $ /usr/local/libexec/mecab/mecab-dict-index -f utf8 -t utf8
-```
-
-パラメータ学習用のモデルファイル`model`が同梱されているので，それを使って配布用辞書を作成（インストール先が`/usr/local/lib/mecab/dic/handic`の場合）
-
-```Shell
+# 学習済みモデルである`model`ファイルを使用して，バイナリ辞書を構築
+# /usr/local/lib/mecab/dic/handic ディレクトリに出力
 $ /usr/local/libexec/mecab/mecab-dict-gen -o /usr/local/lib/mecab/dic/handic -m model
-```
-
-解析用バイナリ辞書の作成
-
-```Shell
+# 配布用バイナリ辞書構築
 $ cd /usr/local/lib/mecab/dic/handic
 $ /usr/local/libexec/mecab/mecab-dict-index -f utf8 -t utf8
 ```
@@ -60,7 +84,7 @@ $ /usr/local/libexec/mecab/mecab-dict-index -f utf8 -t utf8
 
 MeCab実行時に`-d`オプションでHanDic辞書ファイルのあるディレクトリを指定します．
 
-```Shell
+```bash
 $ mecab -d /usr/local/lib/mecab/dic/handic
 ```
 
@@ -86,13 +110,13 @@ HanDicは，UTF-8エンコーディングされたテキストを入力として
 
 コマンドラインやターミナルで，`k2jamo.pl`を使って`input.txt`（例）を解析する場合：
 
-```Shell
+```bash
 $ perl k2jamo.pl input.txt | mecab -d /usr/local/lib/mecab/dic/handic
 ```
 
 あるいはコマンドラインやターミナルで直接入力をする場合：
 
-```Shell
+```bash
 $ echo "겨울 방학 때 뭐 했어요?" | perl k2jamo.pl | mecab -d /usr/local/lib/mecab/dic/handic
 ```
 
@@ -103,43 +127,9 @@ $ echo "겨울 방학 때 뭐 했어요?" | perl k2jamo.pl | mecab -d /usr/local
 出力フォーマットを指定する`-O`オプションを用いて，トークン化処理を行うことができます．
 出力フォーマットとして`tokenize`を指定します．
 
-```Shell
+```bash
 $ echo "뜻을 가진 가장 작은 말의 단위. ‘이야기책’의 ‘이야기’, ‘책’ 따위이다." | perl k2jamo.pl | mecab -d /usr/local/lib/mecab/dic/handic -O tokenize
 뜻 을 가지 ㄴ 가장 작으 ㄴ 말 의 단위 . ‘ 이야기책 ’ 의 ‘ 이야기 ’ , ‘ 책 ’ 따위 이 다 .
-```
-
-## Usage(Python)
-
-[PyPI](https://pypi.org/project/handic/)にて`handic`パッケージを公開しました．
-`mecab-python3`パッケージと，入力を変換するための`jamotools`等のパッケージと共に使用します．
-
-インストール:
-
-```Shell
-pip install handic mecab-python3 jamotools
-```
-
-例:
-
-```Python
-import MeCab
-import handic
-import jamotools
-
-mecaboption = f'-r /dev/null -d {handic.DICDIR}'
-
-tokenizer = MeCab.Tagger(mecaboption)
-tokenizer.parse('')
-
-# 『標準国語大辞典』，「형태소」語義
-sentence = u'뜻을 가진 가장 작은 말의 단위. ‘이야기책’의 ‘이야기’, ‘책’ 따위이다.'
-
-jamo = jamotools.split_syllables(sentence, jamo_type="JAMO")
-
-node = tokenizer.parseToNode(jamo)
-while node:
-    print(node.surface, node.feature)
-    node = node.next
 ```
 
 ## 品詞情報
