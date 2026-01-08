@@ -6,7 +6,7 @@ HanDic(한딕)は，形態素解析エンジン[MeCab](https://taku910.github.io
 
 ## Quick Start(Python / pip)
 
-Pythonパッケージ**`handic`**を使えば，辞書ファイルの構築なしに，すぐ形態素解析を始めることができます．
+Pythonパッケージ **`handic`** を使えば，辞書ファイルの構築なしに，すぐ形態素解析を始めることができます．
 
 ### パッケージのインストール
 
