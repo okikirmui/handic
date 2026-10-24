@@ -1,0 +1,118 @@
+
+name: Build HanDic Dictionary
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'seed/**'
+      - '.github/workflows/build-dictionary.yml'
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build dictionary
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install MeCab
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            mecab mecab-utils libmecab-dev
+
+      - name: Locate MeCab tools
+        id: mecab
+        shell: bash
+        run: |
+          LIBEXEC="$(mecab-config --libexecdir)"
+          echo "libexec=$LIBEXEC" >> "$GITHUB_OUTPUT"
+
+          test -x "$LIBEXEC/mecab-dict-index"
+          test -x "$LIBEXEC/mecab-dict-gen"
+
+          mecab --version
+
+      - name: Build seed dictionary
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          "${{ steps.mecab.outputs.libexec }}/mecab-dict-index" \
+            -d seed \
+            -o seed \
+            -f utf8 \
+            -t utf8
+
+      - name: Generate distribution dictionary
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p final
+
+          "${{ steps.mecab.outputs.libexec }}/mecab-dict-gen" \
+            -d seed \
+            -o final \
+            -m seed/model
+
+      - name: Compile binary dictionary
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          "${{ steps.mecab.outputs.libexec }}/mecab-dict-index" \
+            -d final \
+            -o final \
+            -f utf8 \
+            -t utf8
+
+      - name: Verify dictionary
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          for file in \
+            sys.dic \
+            unk.dic \
+            matrix.bin \
+            char.bin \
+            dicrc
+          do
+            test -s "final/$file"
+          done
+
+          printf '%s\n' \
+            '한국어 형태소 분석을 테스트합니다.' \
+            | mecab -r /dev/null -d final
+
+      - name: Prepare distribution files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p dist/handic
+
+          cp final/sys.dic \
+             final/unk.dic \
+             final/matrix.bin \
+             final/char.bin \
+             final/dicrc \
+             dist/handic/
+
+      - name: Upload dictionary artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: handic-dictionary
+          path: dist/handic/
+          if-no-files-found: error
+          retention-days: 30
