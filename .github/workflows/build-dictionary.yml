@@ -92,7 +92,7 @@ jobs:
           done
 
           printf '%s\n' \
-            '한국어 형태소 분석을 테스트합니다.' \
+            '한국어 형태소 분석을 실행해 봅니다.' \
             | mecab -r /dev/null -d final
 
       - name: Prepare distribution files
